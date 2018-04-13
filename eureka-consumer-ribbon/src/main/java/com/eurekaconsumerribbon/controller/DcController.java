@@ -11,7 +11,7 @@ public class DcController {
     @Autowired
     RestTemplate restTemplate;
 
-    @GetMapping("/consumer")
+    @GetMapping("/consumer-ribbon")
     public String dc(){
         return restTemplate.getForObject("http://eureka-client/dc", String.class);
     }

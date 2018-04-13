@@ -12,6 +12,7 @@ public class DcController {
 
     @GetMapping("/dc")
     public  String dc(){
+        System.out.println("test");
         String services = "Services："+discoveryClient.getServices();
         System.out.println(services);
         return services;
